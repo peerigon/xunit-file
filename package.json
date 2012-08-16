@@ -1,0 +1,17 @@
+{
+    "name": "mocha-xunit-file-reporter",
+    "description": "Basically the same reporter as mocha's xunit reporter, but writes the output in a file.",
+    "version": "0.0.1",
+    "author": {
+        "name": "Matthias Jahn",
+        "email": "matthias.jahn@peerigon.com"
+    },
+    "contributors": [
+        { "name": "Matthias Jahn", "email": "matthias.jahn@peerigon.com" },
+        { "name": "Paul Torka", "email": "paul.torka@yahoo.de" }
+    ],    
+    "keywords" : ["mocha", "xunit", "file", "reporter"],
+    "main" : "lib/index.js",
+    "repository" : "git://github.com/peerigon/mocha-xunit-file-reporter.git"
+    
+}
