@@ -10,3 +10,7 @@ Basically the same reporter as mocha's xunit reporter, but writes the output in 
 3. Run the mocha test with the reporter xunit-file:
 
         mocha -R xunit-file
+
+
+# ToDo
+Find a solution to include the reporter installed via npm
