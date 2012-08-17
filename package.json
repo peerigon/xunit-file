@@ -12,6 +12,6 @@
     ],    
     "keywords" : ["mocha", "xunit", "file", "reporter"],
     "main" : "lib/index.js",
-    "repository" : "git://github.com/peerigon/mocha-xunit-file-reporter.git"
+    "repository" : "git://github.com/peerigon/xunit-file.git"
     
 }
