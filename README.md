@@ -16,4 +16,4 @@ Basically the same reporter as mocha's xunit reporter, but writes the output in 
 Find a solution to include the reporter installed via npm
 
 # Credits
-This reporter is just the original [xunit reporter](https://github.com/visionmedia/mocha/blob/master/lib/reporters/xunit.js) from mocha, just writing the result in an xml file.
+This reporter is just the original [xunit reporter](https://github.com/visionmedia/mocha/blob/master/lib/reporters/xunit.js) from mocha only writing the result in an xml file.
