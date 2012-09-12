@@ -11,7 +11,7 @@
         { "name": "Paul Torka", "email": "paul.torka@yahoo.de" }
     ],    
     "keywords" : ["mocha", "xunit", "file", "reporter"],
-    "main" : "lib/index.js",
+    "main" : "lib/xunit-file.js",
     "repository" : "git://github.com/peerigon/xunit-file.git",
     "license": "MIT"
     
