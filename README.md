@@ -12,7 +12,7 @@ The xunit output file is saved to the file given in the XUNIT_FILE environment v
 
 > XUNIT_FILE=output/xunit.xml mocha -R xunit-file
 
-Set LOG_XUNIT environment variable, if you want the output in the console.
+Set LOG_XUNIT environment variable, if you want the output in the console and xml file.
 
 > LOG_XUNIT=true mocha -R xunit-file
 
