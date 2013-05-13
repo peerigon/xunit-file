@@ -1,8 +1,8 @@
 {
     "file" : "xunit.xml",
     "consoleOutput" : {
-      "start" : true,
       "suite" : true,
+      "test" : true,
       "fail" : false
     }
 }
