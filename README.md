@@ -19,3 +19,7 @@ Set LOG_XUNIT environment variable, if you want the output in the console and xm
 
 # Credits
 This reporter is just the original [xunit reporter](https://github.com/visionmedia/mocha/blob/master/lib/reporters/xunit.js) from mocha only writing the result in an xml file.
+
+# LICENSE 
+
+MIT
