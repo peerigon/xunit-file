@@ -1,19 +1,39 @@
 {
-    "name": "xunit-file",
-    "description": "Basically the same reporter as mocha's xunit reporter, but writes the output in a file.",
-    "version": "0.0.6",
-    "author": {
-        "name": "Matthias Jahn",
-        "email": "matthias.jahn@peerigon.com"
+  "name": "xunit-file",
+  "description": "Basically the same reporter as mocha's xunit reporter, but writes the output in a file.",
+  "version": "0.0.6",
+  "author": {
+    "name": "Matthias Jahn",
+    "email": "matthias.jahn@peerigon.com"
+  },
+  "contributors": [
+    {
+      "name": "Matthias Jahn",
+      "email": "matthias.jahn@peerigon.com"
     },
-    "contributors": [
-        { "name": "Matthias Jahn", "email": "matthias.jahn@peerigon.com" },
-        { "name": "Paul Torka", "email": "paul.torka@yahoo.de" },
-        { "name": "Peter Janes", "email": "peter.janes@ek3.com" }
-    ],    
-    "keywords" : ["mocha", "xunit", "file", "reporter"],
-    "main" : "lib/xunit-file.js",
-    "repository" : "git://github.com/peerigon/xunit-file.git",
-    "license": "MIT"
-    
+    {
+      "name": "Paul Torka",
+      "email": "paul.torka@peerigon.com"
+    },
+    {
+      "name": "Peter Janes",
+      "email": "peter.janes@ek3.com"
+    },
+    {
+      "name": "Johannes Ewald",
+      "email": "johannes.ewald@peerigon.com"
+    }
+  ],
+  "keywords": [
+    "mocha",
+    "xunit",
+    "file",
+    "reporter"
+  ],
+  "main": "lib/xunit-file.js",
+  "repository": "git://github.com/peerigon/xunit-file.git",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^2.0.1"
+  }
 }
