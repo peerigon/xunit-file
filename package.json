@@ -1,7 +1,7 @@
 {
     "name": "xunit-file",
     "description": "Basically the same reporter as mocha's xunit reporter, but writes the output in a file.",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "author": {
         "name": "Matthias Jahn",
         "email": "matthias.jahn@peerigon.com"
@@ -14,6 +14,8 @@
     "keywords" : ["mocha", "xunit", "file", "reporter"],
     "main" : "lib/xunit-file.js",
     "repository" : "git://github.com/peerigon/xunit-file.git",
-    "license": "MIT"
-    
+    "license": "MIT",
+    "dependencies": {
+        "mkdirp": "^0.5.1"
+    }
 }
