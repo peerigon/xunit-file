@@ -1,7 +1,7 @@
 {
   "name": "xunit-file",
   "description": "Basically the same reporter as mocha's xunit reporter, but writes the output in a file.",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": {
     "name": "Matthias Jahn",
     "email": "matthias.jahn@peerigon.com"
