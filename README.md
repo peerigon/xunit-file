@@ -36,6 +36,7 @@ To change the output and activate terminal output, you can create a `config.json
 ```
 $ XUNIT_FILE=output/xunit.xml mocha -R xunit-file // writes result to output/xunit.xml
 $ LOG_XUNIT=true mocha -R xunit-file // activates terminal output
+$ XUNIT_SILENT=true mocha -R xunit-file // disable all terminal output
 ```
 
 Set XUNIT_LOG_ENV environment variable, if you want the output process and environment variables in the properties section of the xml file.
