@@ -18,6 +18,10 @@
     {
       "name": "Peter Janes",
       "email": "peter.janes@ek3.com"
+    },
+    {
+      "name": "Nathan Fairhurst",
+      "email": "nathan.p3pictures@gmail.com"
     }
   ],
   "keywords": [
@@ -30,10 +34,12 @@
   "repository": "git://github.com/peerigon/xunit-file.git",
   "license": "MIT",
   "dependencies": {
+    "dateformat": "^1.0.12",
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "sinon": "^1.17.3"
   },
   "scripts": {
     "test": "rm -rf _tmp && mocha test/*.spec.js"

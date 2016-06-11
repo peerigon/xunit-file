@@ -23,7 +23,7 @@ To change the output and activate terminal output, you can create a `config.json
 **config.json**
 ```
 {
-    "file" : "xunit.xml",
+    "file" : "${cwd}/xunit.xml",
     "consoleOutput" : {
       "suite" : true,
       "test" : true,
@@ -66,6 +66,29 @@ Add the following to the xml report.
 </properties>
 ```
 
+**File Path Options**
+
+The file path accepts a few custom tokens to allow creation of dynamic file names.  This can be useful for multithreaded testing (such as using a Selenium Grid) or to keep multiple files by timestamp.  Tokens are in the following format:
+
+```
+${tokenName: 'Token Data'}
+```
+
+The available tokens are `pid` to inject the process id, `cwd` to inject the current working directory, and `ts` or `timestamp` to inject a timestamp.
+
+By default `ts` and `timestamp` use the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, ex: `2016-03-31T07:27:48+00:00`.  However, if you specify a custom format in the Token Data, the timestamp uses the [node dateformat](https://github.com/felixge/node-dateformat) library to output a string in that format.
+
+A full example `config.json` is as follows:
+
+```
+{
+  "file": "${cwd}/${timestamp: 'MMDD-hhmm'}/xunit-${pid}.xml"
+}
+```
+
+This would output something like `~/myProject/1217-1507/xunit-1234.xml`.  This example would keep copies good for a year without collision, and group multithreaded results by test run.
+
+Tokens can be used in either environment variables or a config.json. The default filepath is always `${cwd}/xunit.xml`.
 
 # Credits
 This reporter is just the original [xunit reporter](https://github.com/visionmedia/mocha/blob/master/lib/reporters/xunit.js) from mocha only writing the result in an xml file.
