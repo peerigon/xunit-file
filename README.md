@@ -3,8 +3,8 @@ xunit-file
 
 Basically the same reporter as mocha's xunit reporter, but writes the output to a file.
 
-![](https://img.shields.io/npm/v/xunit-file.svg)
-![](https://img.shields.io/npm/dm/xunit-file.svg)
+[![](https://img.shields.io/npm/v/xunit-file.svg)](https://www.npmjs.com/package/xunit-file)
+[![](https://img.shields.io/npm/dm/xunit-file.svg)](https://www.npmjs.com/package/xunit-file)
 
 # Usage
 
