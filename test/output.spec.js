@@ -1,4 +1,6 @@
 var runFixture = require('./lib/util').runFixture
+  , Mocha = require('mocha')
+  , gulp = require('gulp')
   , fs = require('fs');
 
 describe('output', function () {
@@ -12,5 +14,16 @@ describe('output', function () {
       var reportExists = fs.existsSync('_tmp/out/target.xml');
       (reportExists) ? done() : done(new Error('Report not found'));
     })
+  });
+
+  it('should write the report to the path specified by {"xunitFile": "value"}', function(done) {
+    var mocha = new Mocha({'reporter': '../../../index.js', 'reporterOptions': {'filePath': '_tmp/out/test.xml' }});
+
+    mocha.addFile('test/fixture/success/success.spec');
+
+    mocha.run(function(failures) {
+      var reportExists = fs.existsSync('_tmp/out/test.xml');
+      (reportExists) ? done() : done(new Error('Report not found'));
+    });
   });
 });
