@@ -34,7 +34,7 @@
   "repository": "git://github.com/peerigon/xunit-file.git",
   "license": "MIT",
   "dependencies": {
-    "dateformat": "^1.0.12",
+    "dateformat": "^2.0.0",
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
